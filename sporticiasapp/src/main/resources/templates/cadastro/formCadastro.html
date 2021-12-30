@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>Realizar Cadastro</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+    <h1>Cadastro:</h1>
+    <form method="post">
+        Nome do Time: <input type="text" value="" name="nomeTime">
+        Cor Predominante Uniforme:<input type="text" value="" name="corUniforme">
+        Horário Fixo de Jogo: <input type="text" value="" name="horarioJogo">
+        Loggin do Usuário: <input type="text" value="" name="loggin">
+        Senha do Usuário: <input type="text" value="" name="password">
+        CNPJ Campo: <input type="text" value="" name="cnpj">
+        Nome do Campo: <input type="text" value="" name="nomeCampo">
+        Endereço do Campo : <input type="text" value="" name="endereco">
+        Tipo do Campo(Gramado ou Terra): <input type="text" value="" name="tipoCampo">
+        Tipo de Iluminação: <input type="text" value="" name="iluminacao">
+
+        <button type="submit">Salvar</button>
+    </form>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>

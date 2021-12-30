@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    #bckground-nav{
+        background-image: url("./Imagens/img.png");
+    }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body style="background-color: #ccffcc">
+    <div>
+        <h3 style="font-weight: bold; text-align:center;color:green; font-family:Roboto, sans-serif">Esporticias-Seu site de noticias e gerenciamento de marcação de jogos de varzea</h3>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <div class="container-fluid" id="bckground-nav">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 center-align">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastrar">Cadastrar Times</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Marcar Jogos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="templates/Imagens/imagem_disputa1.png"></a>
+        <a class="carousel-item" href="#two!"><img src="templates/Imagens/imagem_disputa1.png"></a>
+        <a class="carousel-item" href="#three!"><img src="templates/Imagens/imagem_disputa1.png"></a>
+        <a class="carousel-item" href="#four!"><img src="templates/Imagens/imagem_disputa1.png"></a>
+        <a class="carousel-item" href="#five!"><img src="templates/Imagens/imagem_disputa1.png"></a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col s12"><h5>Eventos destaques</h5></div>
+            <div class="col s4"><img src="./Imagens/LogoCopaItatiaia.png" alt=""> Copa Itatiaia – O maior torneio de futebol amador do Brasil </br><a href="https://www.itatiaia.com.br/sobre/copa-itatiaia">saiba mais</a> </div>
+            <div class="col s4"><img src="./Imagens/LogoCorujao.png" alt=""> Torneio Corujão - Um dos maiores torneios de futebool amador</br><a href="http://fmf.com.br/Competicoes/ProxJogos.aspx?d=14">saiba mais</a></div>
+            <div class="col s4"><img src="./Imagens/LogoCorujao.png" alt=""> Saiba mais sobre outros campeonatos por BH/Interiores <a href="https://futebolbh.com.br/portal/br">aqui.</div>
+
+        </div>
+    </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, options);
+        });
+
+    </script>
+</body>
+</html>
