@@ -1,0 +1,126 @@
+body{
+    background-color: #e3fbe3 !important;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 15fr 1fr;
+     background-color: white !important;
+}
+
+.conteudo{
+    position: relative;
+    overflow: hidden;
+    margin: 2px solid red;
+}
+
+.carrocel ul{
+    list-style: none;
+}
+
+.navbar-brand {
+    font-size: 22px !important;
+    font-weight: 500;
+}
+
+a.nav-link {
+    color: black !important;
+    font-size: 18px !important;
+}
+.cent-just{
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+.navbar {
+    margin-bottom: 30px;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+.table-row {
+    padding: 0 10px 10px 0 !important;
+}
+
+.btn-carrinho {
+    margin-right: 20px !important;
+}
+
+.wrapper {
+    flex-wrap: nowrap !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+#bckground-nav{
+    background-image: url("./Imagens/img.png");
+}
+
+.posicaoTitulo{
+    text-align: center;
+    padding-bottom: 5px;
+    background-color: blue;
+    color: white;
+}
+.limitacao{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.colun-lat{
+    background-color: white;
+}
+
+#sub-container{overflow: hidden;}
+
+.carrocel{
+    width: 100%;
+    height: 680px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.nav{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.nav ul li a{
+    text-decoration: underline;
+}
+
+.carrocel li img{
+    display:flex;
+    position: relative
+    width: 100%;
+    height:100%;
+    margin: 5px 20px;]
+    object-fit:contain;
+}
+
+.carrocel ul{
+    display: flex;
+    list-style: none;
+    width: 1100px;
+    height: 100%;
+}
+.carrocel li{
+    position: relative;
+    margin-right: 15px;
+    animation: slide 25s infinite ease-out;
+}
+
+@keyframes slide{
+    0%{left:0px}
+    12%{left: 0px}
+    24%{left:-1220px}
+    36%{left: -1220px;}
+    48%{left: -2300px;}
+    60%{left: -2300px;}
+    72%{left:-3460px;}
+    84%{left:-3460px}
+    95%{left:-4460px;}
+    100%{left:-4460px}
+}
